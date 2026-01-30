@@ -8,5 +8,8 @@ void main()
     {
         scanf("%d",&a[i]);
     }
-    for()
+    for(i=0;i<=9;i++)
+    {
+        printf("%d",a[i]);
+    }
 }
