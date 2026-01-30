@@ -1,13 +1,14 @@
 #include<stdio.h>
 void main()
 {
-   int x;
-   printf("Enter the value of x: ");
-   scanf("%d",&x);
-   for(int i=0;i<x+1;i++)
-   {
-    int y;
-    y=i*10;
-    printf("%d",y);
-   }
-    }
+ float basic_salary,HRA,TA,PT,gross_salary,net_salary;
+ printf("enter basic_salary");
+ scanf("%f",&basic_salary);
+ HRA=basic_salary*0.10;
+ TA=basic_salary*0.05;
+ gross_salary=basic_salary+HRA+TA;
+ PT=gross_salary*0.02;
+ net_salary=gross_salary-PT;
+ printf("%f",net_salary);
+}
+ 
