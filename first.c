@@ -1,14 +1,30 @@
 #include<stdio.h>
 void main()
 {
- float basic_salary,HRA,TA,PT,gross_salary,net_salary;
- printf("enter basic_salary");
- scanf("%f",&basic_salary);
- HRA=basic_salary*0.10;
- TA=basic_salary*0.05;
- gross_salary=basic_salary+HRA+TA;
- PT=gross_salary*0.02;
- net_salary=gross_salary-PT;
- printf("%f",net_salary);
+    float c,d;
+    int a,b,ch;
+    printf("enter numbers");
+    scanf("%d%d%f%f",&a,&b,&c,&d);
+    printf("enter choice");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+    case 1:
+    printf("addition of two numbers %d",a+b);
+    break;
+    case 2:
+    printf("the subtraction of two numbers %d",a-b);
+    break;
+    case 3:
+    printf("multiplication of two numbers %d",a*b);
+    break;
+    case 4:
+    printf("division of the two numbers %f",c/d);
+    break;
+    case 5:
+    break;
+    default:
+    printf("wrong choice");
+    }
 }
  
