@@ -1,23 +1,45 @@
 #include<stdio.h>
 void main()
 {
-    int num,digit,temp,sum;
-    printf("enter num");
-    scanf("%d",&num);
-    temp=num;
-    sum=0;
-    while(temp!=0)
+   int a,b,ch,i,fact=1;
+   float c,d;
+   int power=1;
+   printf("enter numbers");
+   scanf("%d%d%f%f",&a,&b,&c,&d);
+   printf("enter choice");
+   scanf("%d",&ch);
+   switch(ch)
+   {
+    case 1:
+    printf("addition of two numbers %d",a+b);
+    break;
+    case 2:
+    printf("subtraction of two numbers %d",a-b);
+    break;
+    case 3:
+    printf("multiplication of two numbers %d",a*b);
+    break;
+    case 4:
+    printf("division of two numbers %f",c/d);
+    break;
+    case 5:
+    for(i=1;i<=a;i++)
     {
-        digit=temp%10;
-        sum=sum+(digit*digit*digit);
-        temp=temp/10;
+        fact=fact*i;
     }
-    if(sum==num)
+    printf("factorial is %d",fact);
+    break;
+    case 6:
+    for(i=1;i<=b;i++)
     {
-        printf("num is armstrong");
+        power=power*a;
+
     }
-    else
-    {
-        printf("num is not armstrong");
-    }
+    printf("power is %d",power);
+    break;
+    case 7:
+    break;
+    default:
+    printf("wrong choice");
+   }
 }
